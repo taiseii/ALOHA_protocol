@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import java.util.*;
+
 /**
  *
  * @author jh0iku
  */
-public class Nqueue {
-    ArrayList<Integer> Nt = new ArrayList<>();
+public class AlohaMain {
     
-    void queseInit(){
-        Nt.add(0);
+    
+    public static void main (String[] args){
+        AlohaSim als = new AlohaSim();
+        als.init();
     }
-    
 }

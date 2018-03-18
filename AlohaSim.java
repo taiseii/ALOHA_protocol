@@ -4,35 +4,55 @@
  * and open the template in the editor.
  */
 import java.util.*;
+import statistics.Distribution;
 import statistics.PoissonDistribution;
+import statistics.BinomialDistribution;
 /**
  *
  * @author jh0iku
  */
 public class AlohaSim {
     
-    ArrayList<Integer> Yt = new ArrayList<>();
+    ArrayList<Double> Yt = new ArrayList<>();
     ArrayList<Integer> At = new ArrayList<>();
+    
+    Random rng = new Random();
      
     double f;
-    double v;
     int T;
     int run;
+    double v;
     
-    void init(){
+     void init(){
         f = 0.5;
-        v = 0.4;
         T = 20;
         run = 1000;
+        Yt.clear();
+        Yt.add(0.0);
+        Yt.set(0,0.0);
+        v = 0.4;
+        simulation();
+        
     }
     
+    AlohaSim(){
+        
+    }
+    
+     
     void simulation(){
+        for(int i=1; i != T; i++){
+          Distribution aYt = new PoissonDistribution(v,rng);
+          Yt.add(aYt.nextRandom());
+            
+            
+        }
+        
         
     }
     
     
-    public static void main (String[] args){
-        System.out.println("tomato");
-    }
+    
+    
     
 }
