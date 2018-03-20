@@ -12,9 +12,11 @@ public class SimResult {
     
     protected double = sumT;
     
-    SimResult(double sumT){
+    public SimResult(double sumT){
         this.sumT = 0;
     }
+    
+    
     
     
 }

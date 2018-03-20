@@ -102,7 +102,7 @@ public class AlohaSim2 {
     }
     
     public double reuslts(int rn){
-        System.out.println(sT/rn);
+        //System.out.println("sT:"+sT + " E:"+(sT/rn));
         
         return sT/rn;
     }
