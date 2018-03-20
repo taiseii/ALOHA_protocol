@@ -10,7 +10,11 @@
  */
 public class SimResult {
     
-    void dispResult(){
-        System.out.println("result");
+    protected double = sumT;
+    
+    SimResult(double sumT){
+        this.sumT = 0;
     }
+    
+    
 }
