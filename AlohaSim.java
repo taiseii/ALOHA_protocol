@@ -42,6 +42,12 @@ public class AlohaSim {
         
     }
 
+    void clearArr(){
+        Yt.clear();
+        At.clear();
+        Nt_t.clear();
+        Zt.clear();
+    }
 
     void simulation() {
         for (int i = 0; i != T; i++) {
@@ -85,14 +91,15 @@ public class AlohaSim {
             }
         }
         
-        /*
+        
         System.out.println("At:  " + Arrays.toString(At.toArray()) + ":" + At.size());
         System.out.println("Yt:  " + Arrays.toString(Yt.toArray()) + ":" + Yt.size());
         System.out.println("Zt:  " + Arrays.toString(Zt.toArray()) + ":" + Zt.size());
         System.out.println("Nt_t:" + Arrays.toString(Nt_t.toArray()) + ":" + Nt_t.size());
-        */
+        
         
         Nt_t_l = Nt_t_l + Nt_t.get(Nt_t.size()-1);
+        
     }
     
     void q1(){
